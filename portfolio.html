@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Portfolio — Développeur Full Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="portfolio.css"/>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div class="grid-bg"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">AM-SOLUTIONS</a>
+  <div class="nav-links">
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#certifications">Certifs</a>
+    <a href="#contact" class="nav-cta">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+      Contact
+    </a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">À propos</a>
+  <a href="#skills" onclick="toggleMenu()">Compétences</a>
+  <a href="#projects" onclick="toggleMenu()">Projets</a>
+  <a href="#parcours" onclick="toggleMenu()">Parcours</a>
+  <a href="#certifications" onclick="toggleMenu()">Certifications</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<main>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        Disponible pour des opportunités
+      </div>
+      <h1 class="hero-name">
+        Mounahi<br/><span>Abdoul-wahab</span>
+      </h1>
+      <p class="hero-role">Développeur Full Stack · Génie Logiciel</p>
+      <p class="hero-desc">
+        Étudiant en 2ème année Génie Logiciel & Systèmes d'Information à la Faculté des Sciences de Monastir.
+        Passionné par la création de solutions web robustes, du backend Spring Boot
+        aux interfaces React modernes.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          Voir mes projets
+        </a>
+        <a href="#contact" class="btn-outline">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Me contacter
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Années d'études</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Projets réalisés</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Certification</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-frame">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring2"></div>
+        <div class="avatar-img"><img src="IMG_4951 copy.jpg" alt="Mounahi Abdoul-wahab"></div>
+        <div class="avatar-badge">
+          <svg width="8" height="8" viewBox="0 0 24 24" fill="#00e5a0"><circle cx="12" cy="12" r="10"/></svg>
+          Open to work
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <div class="section-eyebrow">À propos de moi</div>
+        <h2 class="section-title">Né au Niger,<br/>étudiant en Tunisie</h2>
+        <p>
+          Je suis <strong>Mounahi Abdoul-wahab</strong>, développeur Full Stack en formation à
+          la Faculté des Sciences de Monastir, Tunisie. Mon parcours m'a conduit du lycée
+          CSP L'Eau Vive à Niamey jusqu'aux salles de TP de Monastir, en passant par
+          une expérience professionnelle chez ABK-Services.
+        </p>
+        <p>
+          Ma passion : construire des applications web complètes, du <strong>backend
+          Spring Boot</strong> avec ses APIs REST sécurisées, jusqu'aux interfaces
+          <strong>React</strong>,<strong>HTML,CSS3/BOOTSTRAP,et JS</strong> modernes pensées pour l'utilisateur final.
+        </p>
+        <p>
+          Curieux et rigoureux, je m'intéresse particulièrement aux systèmes distribués,
+          aux architectures microservices, et aux défis technologiques du continent africain.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">🌍</div>
+            <div class="highlight-label">Nationalité</div>
+            <div class="highlight-value">Nigérien</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🎓</div>
+            <div class="highlight-label">Niveau</div>
+            <div class="highlight-value">2ème année Licence</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">📍</div>
+            <div class="highlight-label">Localisation</div>
+            <div class="highlight-value">Monastir, Tunisie</div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">💼</div>
+            <div class="highlight-label">Statut</div>
+            <div class="highlight-value">Étudiant / Stage</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="info-block">
+          <div class="info-header">
+            <div class="info-dot dot-red"></div>
+            <div class="info-dot dot-yellow"></div>
+            <div class="info-dot dot-green"></div>
+            <span style="margin-left:.4rem">profil.json</span>
+          </div>
+          <div class="info-content">
+            <div class="info-row">
+              <span class="info-key">"prenom"</span>
+              <span class="info-val">Mounahi Abdoul-wahab</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">"formation"</span>
+              <span class="info-val">Génie Logiciel & SI</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">"universite"</span>
+              <span class="info-val">FSM Monastir, Tunisie</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">"annee"</span>
+              <span class="info-val">2ème année (2025–2026)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">"bac"</span>
+              <span class="info-val">CSP L'Eau Vive, Niamey</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">"langues"</span>
+              <span class="info-val">Français,Anglais, Haoussa, Arabe</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">"disponible"</span>
+              <span class="info-val" style="color:var(--green)">true ✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SKILLS ═══════ -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Compétences techniques</div>
+      <h2 class="section-title">Stack & Technologies</h2>
+      <p class="section-sub">Technologies maîtrisées et outils utilisés dans mes projets.</p>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-category">
+        <div class="skill-cat-icon">⚙️</div>
+        <div class="skill-cat-title">Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Spring Boot</span>
+          <span class="skill-tag highlight">Java</span>
+          <span class="skill-tag">Spring Security</span>
+          <span class="skill-tag">JWT</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">JPA/Hibernate</span>
+          <span class="skill-tag">Maven</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">🎨</div>
+        <div class="skill-cat-title">Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">React.js</span>
+          <span class="skill-tag highlight">Tailwind CSS</span>
+          <span class="skill-tag">JavaScript ES6+</span>
+          <span class="skill-tag">HTML5 / CSS3</span>
+          <span class="skill-tag">Zustand</span>
+          <span class="skill-tag">React Router</span>
+          <span class="skill-tag">Vite</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">🗄️</div>
+        <div class="skill-cat-title">Base de données</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">MySQL</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Modélisation UML</span>
+          <span class="skill-tag">Merise</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">🛠️</div>
+        <div class="skill-cat-title">Outils & DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag highlight">Git / GitHub</span>
+          <span class="skill-tag highlight">Linux</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">IntelliJ IDEA</span>
+      
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">📐</div>
+        <div class="skill-cat-title">Méthodes & Concepts</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Architecture MVC</span>
+          <span class="skill-tag">Clean Code</span>
+          <span class="skill-tag">Agile/Scrum</span>
+          <span class="skill-tag">Design Patterns</span>
+          <span class="skill-tag">Tests unitaires</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-icon">🌐</div>
+        <div class="skill-cat-title">Autres</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python (notions)</span>
+          <span class="skill-tag">Algorithmes</span>
+          <span class="skill-tag">Réseaux</span>
+          <span class="skill-tag">Shell/Bash</span>
+          <span class="skill-tag">Figma (notions)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PROJETS ═══════ -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Projets</div>
+      <h2 class="section-title">Ce que j'ai construit</h2>
+      <p class="section-sub">Des projets concrets allant de la conception à la mise en production.</p>
+    </div>
+    <div class="projects-grid reveal">
+
+      <!-- Projet featured -->
+      <div class="project-card featured">
+        <div class="project-badge">PROJET PHARE</div>
+        <div class="project-header">
+          <div class="project-icon">👑</div>
+          <div class="project-links">
+            <a href="https://github.com/AbdoulwahabMounahi/Sarkin-Kassoua-Niger" target="_blank" class="project-link" title="GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="project-link" title="Demo">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Sarkin Kasoua — Plateforme B2B Niger</div>
+          <div class="project-desc">
+            Plateforme complète de groupage d'achats et mutualisation du transport pour le marché nigérien.
+            Connecte commerçants, producteurs et transporteurs. Algorithme de groupage automatique,
+            paiement sécurisé en séquestre, notifications SMS via Africa's Talking, interface PWA offline-first.
+            Backend Spring Boot + Frontend React avec Tailwind CSS.
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Spring Boot 3</span>
+            <span class="stack-tag">React.js</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">JWT</span>
+            <span class="stack-tag">Tailwind CSS</span>
+            <span class="stack-tag">Africa's Talking SMS</span>
+            <span class="stack-tag">Zustand</span>
+            <span class="stack-tag">Swagger</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🏥</div>
+          <div class="project-links">
+            <a href="https://github.com/AbdoulwahabMounahi/Unifinder-website" target="_blank" class="project-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Système de Gestion des salles universitaires</div>
+          <div class="project-desc">
+            Application de gestion des salles universitaires, réservation et suivi des utilisations.
+            Interface admin avec tableaux de bord et reporting. Authentification
+            sécurisée multi-rôles (administrateur, enseignant, étudiant).
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Java</span>
+            <span class="stack-tag">Spring Boot</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">HTML/BOOTSTRAP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📚</div>
+          <div class="project-links">
+            <a href="https://github.com/AbdoulwahabMounahi/Shopflow" target="_blank" class="project-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-name">Plateforme de flow du marché en ligne(Shopflow)</div>
+          <div class="project-desc">
+            Application de e-commerce avec gestion de catalogue, panier, commandes et post des produits.
+            Interface utilisateur moderne avec React.js et Tailwind CSS. Backend spring-boot avec Express,
+            base de données MySQL. Fonctionnalités de recherche, filtres, et recommandations basées sur les préférences utilisateur.
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">React.js</span>
+            <span class="stack-tag">Spring Boot</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Tailwind</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PARCOURS ═══════ -->
+<section id="parcours">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Parcours</div>
+      <h2 class="section-title">Formation & Expérience</h2>
+      <p class="section-sub">Mon chemin du Niger à la Tunisie.</p>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2024 — Présent</div>
+        <div class="timeline-title">Licence en Génie Logiciel & Systèmes d'Information</div>
+        <div class="timeline-place">Faculté des Sciences de Monastir — Monastir, Tunisie</div>
+        <div class="timeline-desc">
+          2ème année de Licence. Cours en algorithmique avancée, architecture logicielle,
+          bases de données, réseaux, développement web & mobile, génie logiciel.
+          Projets pratiques en équipe avec méthodologies agiles.
+        </div>
+        <span class="timeline-badge">En cours ✓</span>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2022 — 2023 · 2 mois</div>
+        <div class="timeline-title">Stagiaire Informatique</div>
+        <div class="timeline-place">ABK-Services — Niamey, Niger</div>
+        <div class="timeline-desc">
+          Mini-stage en informatique. Découverte de l'environnement professionnel IT,
+          maintenance de systèmes, assistance technique, initiation à l'informatique
+          aux outils de gestion d'entreprise. Expérience enrichissante qui a renforcé ma passion pour l'informatique.
+        </div>
+        <span class="timeline-badge">Stage professionnel</span>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2023 — 2024</div>
+        <div class="timeline-title">Baccalauréat — Sciences de l'Informatique</div>
+        <div class="timeline-place">CSP L'Eau Vive — Niamey, Niger</div>
+        <div class="timeline-desc">
+          Obtention du Baccalauréat avec mention Bien. Formation en mathématiques et Sciences de la Nature.
+
+        </div>
+        <span class="timeline-badge">Diplômé ✓</span>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">2020 — 2021</div>
+        <div class="timeline-title">Brevet d'Études du Premier Cycle (BEPC)</div>
+        <div class="timeline-place">CSP Muslim Hands — Niamey, Niger</div>
+        <div class="timeline-desc">
+          Obtention du BEPC avec mention. Fin du premier cycle de l'enseignement secondaire.
+        </div>
+        <span class="timeline-badge">Diplômé ✓</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CERTIFICATIONS ═══════ -->
+<section id="certifications">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Certifications</div>
+      <h2 class="section-title">Reconnaissances officielles</h2>
+    </div>
+    <div class="certs-grid reveal">
+
+      <div class="cert-card">
+        <div class="cert-icon-wrap">🐧</div>
+        <div>
+          <div class="cert-name">Linux Essentials</div>
+          <div class="cert-issuer">Linux Professional Institute (LPI)</div>
+        </div>
+        <div class="cert-year">2025–2026</div>
+      </div>
+
+      <div class="cert-card" style="opacity:.6">
+        <div class="cert-icon-wrap">☁️</div>
+        <div>
+          <div class="cert-name">Certification Cloud</div>
+          <div class="cert-issuer">En préparation</div>
+        </div>
+        <div class="cert-year" style="background:rgba(85,90,107,.15);color:var(--txt3);border-color:var(--border)">
+          À venir
+        </div>
+      </div>
+
+      <div class="cert-card" style="opacity:.6">
+        <div class="cert-icon-wrap">🔐</div>
+        <div>
+          <div class="cert-name">Cybersécurité Fondamentaux</div>
+          <div class="cert-issuer">En préparation</div>
+        </div>
+        <div class="cert-year" style="background:rgba(85,90,107,.15);color:var(--txt3);border-color:var(--border)">
+          À venir
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Contact</div>
+      <h2 class="section-title">Travaillons ensemble</h2>
+    </div>
+    <div class="contact-wrapper reveal">
+      <div class="contact-info">
+        <p class="contact-intro">
+          Étudiant disponible pour des stages, projets freelance ou collaborations académiques.
+          N'hésitez pas à me contacter pour discuter de vos projets ou opportunités.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:abdoulwahabmounahi200@gmail.com" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(0,229,160,.1)">📧</div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-val">abdoulwahabmounahi200@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://github.com/AbdoulwahabMounahi" target="_blank" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(255,255,255,.05)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--txt2)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-val">github.com/AbdoulwahabMounahi</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/abdoul-wahab-mounahi-aa177b397/" target="_blank" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(74,158,255,.1)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#4a9eff"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-val">linkedin.com/in/abdoul-wahab-mounahi-aa177b397/</div>
+            </div>
+          </a>
+          <div class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(245,200,66,.1)">📍</div>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Localisation</div>
+              <div class="contact-link-val">Monastir, Tunisie</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label class="form-label">Votre nom</label>
+            <input type="text" class="form-input" placeholder="Jean Dupont" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Votre email</label>
+            <input type="email" class="form-input" placeholder="jean@example.com" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Sujet</label>
+            <input type="text" class="form-input" placeholder="Proposition de stage, collaboration..."/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Décrivez votre projet ou opportunité..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Envoyer le message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-copy">
+    © 2026 <span>Mounahi Abdoul wahab</span> ·Fait à Monastir
+  </div>
+  <a href="#hero" class="footer-back">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    Haut de page
+  </a>
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
